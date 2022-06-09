@@ -11,10 +11,7 @@ const app = express();
 // app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
-  res.setHeader(
-    'Access-Control-Allow-Origin',
-    'https://challenge08-binar.netlify.app/'
-  );
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
     'Access-Control-Allow-Headers',
     'x-access-token, Origin, Content-Type, Accept'
