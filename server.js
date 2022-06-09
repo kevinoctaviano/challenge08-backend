@@ -4,11 +4,11 @@ const dbConfig = require('./app/config/db.config');
 
 const app = express();
 
-var corsOptions = {
-  origin: 'https://challenge08-binar.netlify.app/',
-};
+// var corsOptions = {
+//   origin: 'https://challenge08-binar.netlify.app/',
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
   res.setHeader(
